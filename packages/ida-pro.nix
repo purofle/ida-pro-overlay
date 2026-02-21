@@ -9,12 +9,12 @@ let
 in
 pkgs.stdenv.mkDerivation rec {
   pname = "ida-pro";
-  version = "9.2.250908";
+  version = "9.3.260213";
 
   src = pkgs.requireFile {
-    name = "ida-pro_92_x64linux.run";
+    name = "ida-pro_93_x64linux.run";
     url = "https://my.hex-rays.com/";
-    sha256 = "aadd0f8ae972b84f94f2a974834abf1619f3bd933b3b4d8275f9c50008d05ae1";
+    sha256 = "2ed43ae4bb84d74dcae6f0099210dfa8d61bfea4952f5f9a07a9aae16cb70f82";
   };
 
   desktopItem = pkgs.makeDesktopItem {
